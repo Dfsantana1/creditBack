@@ -40,7 +40,7 @@ class Credit extends Model
     // Relación con cuotas (una crédito tiene muchas cuotas)
     public function quotas(): HasMany
     {
-        return $this->hasMany(Quota::class, 'creditId', 'id');
+        return $this->hasMany(Quota::class, 'creditId', 'id')->orderBy('dueDate');
     }
     
     public function isPaid(): bool
