@@ -1,0 +1,111 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.form-response {
+    margin-bottom: 10px;
+    clear:both;
+}
+
+.form-question, .form-answer  {
+    display:inline-block;
+    color: #3c3c3c;
+    vertical-align: text-top;
+}
+
+.form-response ul {
+    margin-top:0;
+    padding-top:0;
+}
+
+.form-response ul.form-answer li {
+    border-bottom: 1px solid #3c3c3c;
+    margin-bottom: 3px;
+    list-style: none;
+}
+
+.form-response ul.form-answer li:last-child {
+    border-bottom: none;
+}
+
+.form-question {
+    font-weight: bold;
+    margin-right:2px;
+}
+
+.form-question:after{
+    content: ": ";
+    margin-right: 10px;
+}
+
+.page-header h2 {
+    color: #3c3c3c;
+    margin-bottom: 0;
+}
+
+.page-wrapper {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.form-type-subheader h5 {
+    font-size: 14px;
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+.form-response.form-type-continuous table tr th {
+    font-size: 13px;
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+.form-response.form-type-continuous table tr td {
+    color: #3c3c3c;
+}
+
+@page {
+    margin: 90px 25px;
+}
+
+header {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    border-bottom: 1px solid #07B59A;
+    text-align: left;
+    width:100%;
+    line-height: 30px;
+    z-index: 5;
+}
+
+.logo-img {
+    max-width: 160px;
+    width: 160px;
+    height: auto;
+    text-align: left;
+}
+
+footer {
+    position: fixed;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    border-top: 1px solid #07B59A;
+    color: #07B59A;
+    text-align: center;
+    line-height: 30px;
+    z-index: 5;
+}
+footer p {
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
