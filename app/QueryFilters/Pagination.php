@@ -28,7 +28,7 @@ class Pagination
     {
         $builder = $next($request);
         // Sort & Direction
-        $builder->orderBy(request()->input('orderBy', 'id'), request()->input('direction', 'ASC'));
+        $builder->orderBy(request()->input('orderBy', 'createdAt'), request()->input('direction', 'ASC'));
         // Offset
         $builder->offset(request()->input('offset', 0));
         // Return

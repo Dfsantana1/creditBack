@@ -9,6 +9,7 @@ use App\Http\Resources\Credit\CreditResource;
 use App\Http\Resources\CreditResource as ResourcesCreditResource;
 use App\Models\Credit;
 use App\Models\Credit\Credit as CreditCredit;
+use App\QueryFilters\Pagination;
 use App\QueryFilters\Pagination\CreditPagination;
 use App\QueryFilters\ParentUserFilter;
 use Illuminate\Contracts\Container\Container;
@@ -46,6 +47,7 @@ class CreditList extends ScoutList
     {
         $this->filters = [
             ParentUserFilter::class,
+            Pagination::class,
         ];
         parent::__construct($container);
     }
