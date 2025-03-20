@@ -46,7 +46,6 @@ class CreditList extends ScoutList
     public function __construct(Container $container)
     {
         $this->filters = [
-            ParentUserFilter::class,
             Pagination::class,
         ];
         parent::__construct($container);
